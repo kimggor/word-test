@@ -367,4 +367,134 @@ const CARDS = [
       "양성 모음(ㅏ·ㅗ)은 양성끼리, 음성 모음(ㅓ·ㅜ 등)은 음성끼리 어울리는 현상.\n주로 의태어·의성어, 어간+어미에서 나타남.",
     example: "퐁당퐁당(양성) &nbsp;|&nbsp; 풍덩풍덩(음성)",
   },
+
+  /* ══════════════════════════════════════════
+     단어 — 시험 빈출 맞춤법
+  ══════════════════════════════════════════ */
+  {
+    cat: "단어",
+    word: "곱빼기",
+    sub: "맞춤법 — 된소리 표기",
+    meaning:
+      '실제 발음이 된소리[빼]이므로 된소리로 표기.\n"곱배기"는 틀린 표기.\n\n비슷한 유형:\n뚝배기(o) — 발음 [뚝빼기]지만 예외적으로 예사소리 표기\n★ 곱빼기는 된소리, 뚝배기는 예사소리 — 함께 정리!',
+    example:
+      '<span class="wrong">곱배기</span> &nbsp;→&nbsp; <span class="right">곱빼기 ✓</span><br>cf. <span class="right">뚝배기 ✓</span> (예사소리 표기)',
+  },
+  {
+    cat: "단어",
+    word: "덮인 [더핀]",
+    sub: "맞춤법 + 표준발음 — 거센소리 연음",
+    meaning:
+      '"덮다"의 어간 "덮-"(받침 ㅍ) + 어미 "-인"\n모음 어미 앞에서 받침 ㅍ이 그대로 뒤 모음에 연음됨.\n발음: [더핀]\n\n★ 표기는 어간 형태 유지: 덮인(o) / 더핀(x)\n★ 격음화와 혼동 주의 — 여기서는 연음만 적용',
+    example:
+      '<span class="wrong">더핀</span> &nbsp;→&nbsp; 표기: <span class="right">덮인 ✓</span><br>발음: <span class="right">[더핀] ✓</span>',
+  },
+  {
+    cat: "단어",
+    word: "내로라하는",
+    sub: "맞춤법 — 어원 혼동 주의",
+    meaning:
+      '"어느 분야에서 손꼽힐 만하다"는 뜻의 관용표현.\n어원: 나 + 이(서술격 조사) + 로라(어미) → 내로라\n\n내로라하다(o) / 내노라하다(x)\n★ "내노라"는 "내로라"의 잘못된 표기.',
+    example:
+      '<span class="wrong">내노라하는</span> &nbsp;→&nbsp; <span class="right">내로라하는 ✓</span><br><em>예시</em>: 국내에서 <em>내로라하는</em> 전문가들',
+  },
+  {
+    cat: "단어",
+    word: "눌은밥",
+    sub: "맞춤법 — ㄷ 불규칙 활용",
+    meaning:
+      '"눋다"(곡식이 솥 바닥에 눌어붙다)의 관형사형.\n눋다는 ㄷ 불규칙: 모음 어미 앞에서 ㄷ → ㄹ\n눋+은 → 눌은 → 눌은밥\n\n누른밥(x) — "누르다"(힘을 가해 낮추다)의 활용이므로 다른 뜻\n★ 눋다(ㄷ불규칙) ↔ 누르다(르불규칙) 구별!',
+    example:
+      '<span class="wrong">누른밥</span> &nbsp;→&nbsp; <span class="right">눌은밥 ✓</span><br><em>어원</em>: 눋다(ㄷ불규칙) + 은 → 눌은',
+  },
+  {
+    cat: "단어",
+    word: "구레나룻",
+    sub: "맞춤법 — 받침 ㅅ 표기",
+    meaning:
+      '귀 밑에서 턱까지 길게 난 수염을 이르는 말.\n"구레나루"로 쓰면 틀린 표기.\n받침 ㅅ이 있는 형태 "구레나룻"이 표준어.\n\n발음: [구레나룯] — 단어 끝 ㅅ은 [ㄷ]으로 발음',
+    example:
+      '<span class="wrong">구레나루</span> &nbsp;→&nbsp; <span class="right">구레나룻 ✓</span><br>발음: <span class="right">[구레나룯]</span>',
+  },
+  {
+    cat: "단어",
+    word: "곰곰이",
+    sub: '맞춤법 — 부사 파생 접미사 "-이" vs "-히"',
+    meaning:
+      '"곰곰하다"라는 형용사가 없으므로 "-이"를 붙임.\n\n★ "-히" 쓰는 경우: "~하다"가 붙는 어근 뒤\n   솔직히, 분명히, 조용히, 열심히\n★ "-이" 쓰는 경우: "~하다"가 붙지 않거나 "~하다"여도 소리가 [이]로만 나면\n   곰곰이, 더욱이, 일찍이, 생긋이',
+    example:
+      '<span class="wrong">곰곰히</span> &nbsp;→&nbsp; <span class="right">곰곰이 ✓</span><br>cf. <span class="right">조용히 ✓</span> (조용하다 → -히)',
+  },
+  {
+    cat: "단어",
+    word: "어떡해 vs 어떻게",
+    sub: "맞춤법 — 혼동 표현",
+    meaning:
+      '"어떡해": "어떻게 해"의 줄임말 → 문장 끝에 옴\n"어떻게": 부사, "어떠하게"의 줄임 → 뒤에 동사·형용사 이어짐\n\n어떡해(o) = 어떻게 해 → 감탄·당혹 표현\n어떻게(o) = 어떠한 방식으로',
+    example:
+      "이제 <em>어떡해</em>! (= 어떻게 해)<br>이걸 <em>어떻게</em> 해결하지?",
+  },
+  {
+    cat: "단어",
+    word: "며칠",
+    sub: '맞춤법 — "몇일"은 없는 표기',
+    meaning:
+      '"몇+일"처럼 보이지만 "며칠"이 맞는 표기.\n"몇일"은 표준어에 없는 표기.\n\n★ "며칠"은 그 자체가 하나의 단어\n발음: [며칠] (연음, [며딜] 아님)',
+    example:
+      '<span class="wrong">몇일</span> &nbsp;→&nbsp; <span class="right">며칠 ✓</span><br>발음: <span class="right">[며칠] ✓</span>',
+  },
+  {
+    cat: "단어",
+    word: "희한하다",
+    sub: "맞춤법 — 발음 혼동 주의",
+    meaning:
+      '"매우 드물거나 신기하다"는 뜻.\n발음이 [히안하다]처럼 들려 "희안하다"로 쓰기 쉬움.\n\n희한하다(o) / 희안하다(x)\n발음: [히한하다]',
+    example:
+      '<span class="wrong">희안하다</span> &nbsp;→&nbsp; <span class="right">희한하다 ✓</span><br>발음: <span class="right">[히한하다]</span>',
+  },
+  {
+    cat: "단어",
+    word: "안절부절못하다",
+    sub: "맞춤법 — 부정어 포함 관용구",
+    meaning:
+      '"마음이 초조하고 안정되지 못하다"는 뜻.\n"못하다"가 포함된 형태가 표준어.\n\n안절부절못하다(o) / 안절부절하다(x)\n★ "안절부절하다"는 표준어가 아님!',
+    example:
+      '<span class="wrong">안절부절하다</span> &nbsp;→&nbsp; <span class="right">안절부절못하다 ✓</span>',
+  },
+  {
+    cat: "단어",
+    word: "설거지",
+    sub: "맞춤법 — 어원 분리 표기",
+    meaning:
+      '"설겆이"에서 온 말이지만 현재 표준어는 "설거지".\n어원과 달리 굳어진 표기를 표준으로 인정한 사례.\n\n설거지(o) / 설겆이(x)',
+    example:
+      '<span class="wrong">설겆이</span> &nbsp;→&nbsp; <span class="right">설거지 ✓</span>',
+  },
+  {
+    cat: "단어",
+    word: "낭떠러지",
+    sub: "맞춤법 — 발음 혼동 주의",
+    meaning:
+      '"깎아 내린 듯 높은 언덕의 가장자리"를 뜻하는 말.\n"낭떨어지"로 잘못 쓰는 경우가 많음.\n\n낭떠러지(o) / 낭떨어지(x)',
+    example:
+      '<span class="wrong">낭떨어지</span> &nbsp;→&nbsp; <span class="right">낭떠러지 ✓</span>',
+  },
+  {
+    cat: "단어",
+    word: "오뚝이",
+    sub: '맞춤법 — 접미사 "-이"',
+    meaning:
+      '"오뚝"은 "오뚝하다"의 어근이 아니므로 "-이"를 붙임.\n\n오뚝이(o) / 오뚜기(x)\n★ 기업명 "오뚜기"와 혼동 주의 — 표준 맞춤법은 "오뚝이"',
+    example:
+      '<span class="wrong">오뚜기</span> (기업명) &nbsp;→&nbsp; 맞춤법: <span class="right">오뚝이 ✓</span>',
+  },
+  {
+    cat: "단어",
+    word: "우레",
+    sub: "맞춤법 — 표준어 교체",
+    meaning:
+      '"천둥"과 같은 뜻의 순우리말.\n"우뢰"는 한자어처럼 보이지만 실제로는 없는 한자어.\n2011년 표준어 개정으로 "우레"가 표준어.\n\n우레(o) / 우뢰(x)',
+    example:
+      '<span class="wrong">우뢰</span> &nbsp;→&nbsp; <span class="right">우레 ✓</span><br><em>예시</em>: <em>우레</em>와 같은 박수',
+  },
 ];
